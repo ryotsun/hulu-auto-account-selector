@@ -1,0 +1,22 @@
+{
+  "name": "Hulu Auto Account Selector",
+  "version": "1.0.1",
+  "manifest_version": 2,
+  "description": "Hulu (Happy On)  にログイン時に、自動的にアカウントを選択してトップページを表示する拡張機能です。",
+  "icons": {
+    "128": "icon/128.png"
+  },
+  "permissions": [
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.happyon.jp/*"
+      ],
+      "js": [
+        "script/jquery-3.2.1.min.js",
+        "script/script.js"
+      ]
+    }
+  ]
+}
